@@ -1,0 +1,197 @@
+@import "global.css";
+
+
+
+#menu-bar{
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--cor-bg-principal);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#menu-bar > ul{
+
+    display: flex;
+
+}
+
+li{
+
+    list-style: none;
+    margin: 0px 1rem;
+    padding: 1rem;
+    transition: .3s all ease-in-out;
+
+}
+
+li.currentPage{
+
+    background-color: var(--cor-bg-principal-escura);
+
+}
+
+li:hover{
+
+    background-color: var(--cor-bg-principal-escura);
+    transition: .3s all ease-in-out;
+}
+
+svg{
+
+    width: 1.2rem;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+a{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout{
+
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.logout:hover{
+
+    background-color: var(--cor-bg-principal-escura);
+    transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+
+}
+
+.logout > div > a > svg{
+
+    width: 1.2rem;
+
+}
+
+@media only screen and (max-width: 800px){
+
+    #menu-bar{
+
+        flex-direction: column-reverse;
+        overflow: hidden;
+        
+    }
+
+        
+    #menu-bar > ul{
+
+        flex-direction: column;
+        height: 0px;
+        transition: .3s all ease-in-out;
+
+    }
+
+    #menu-bar > ul.open{
+
+        height: 40vh;
+        transition: .3s all ease-in-out;
+    }
+
+    .logout{
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logout:hover{
+
+        background-color: transparent;
+        transition: .3s all ease-in-out;
+    
+    }
+}
+
+
+
+
+
+
+
+.hamburger{
+
+    display: none;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0px 0px rgba(255, 208, 0, .5);
+}
+
+.hamburger.open::before,
+.hamburger.open::after{
+
+    background-color: white;
+
+}
+
+.hamburger::before,
+.hamburger::after
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0px 0px rgba(255, 208, 0, .5);
+    transition: all .5s ease-in-out;
+}
+
+.hamburger::before{
+
+    transform: translateY(-12px);
+}
+
+.hamburger::after{
+
+    transform: translateY(12px);
+}
+
+.hamburger.open{
+
+    transform: translateX(-50px);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.hamburger.open::before{
+
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.hamburger.open::after{
+
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media only screen and (max-width: 800px){
+
+    .hamburger{
+
+        display: flex;
+    }
+}

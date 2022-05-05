@@ -1,0 +1,300 @@
+@import "global.css";
+
+
+.page{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.form-parent{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    
+}
+
+#altela-novo{
+
+    position: relative;
+    padding: 1rem;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 1rem;
+    
+}
+
+#altela-novo > h1{
+
+    color: var(--cor-bg-principal);
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+#altela-novo > h5{
+
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dddddd;
+    color: #dddddddd;
+    margin: 25px 0px;
+}   
+
+.tipo-dados{
+
+    display: flex;
+}
+
+.input-container{
+
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    margin: 1rem;
+    position: relative;
+    padding-left: 7%;
+
+    border-bottom: 2px solid var(--cor-bg-principal);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.input-container > div{
+
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+.input-container > div > svg{
+
+    color: var(--cor-bg-principal);
+    
+}
+
+.input-container > input{
+
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(75, 75, 75);
+
+    
+}
+
+.input-container > select{
+
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(75, 75, 75);
+
+    
+}
+
+
+.input-container > input::-webkit-outer-spin-button,
+.input-container > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-container > input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 800px){
+
+
+    #altela-novo{
+
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .tipo-dados{
+
+        flex-direction: column;
+    }
+
+    .input-container{
+
+        position: relative;
+        margin: 15px 0px;
+        width: auto;
+    }
+
+    .input-container{
+
+        padding-left: 10%;
+
+    
+    }
+}
+
+
+.dia{
+
+    display: flex;
+
+}
+
+.dia-container{
+
+    padding: 1rem;
+}
+
+.dia-container > h5{
+
+    font-size: 1rem;
+    color: var(--cor-bg-principal);
+}
+
+.dia-row{
+
+    display: flex;
+}
+
+@media only screen and (max-width: 800px){
+
+    .dia-row{
+
+        flex-direction: column;
+    }
+}
+
+
+.btn-parent{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-container{
+
+    position: relative;
+    height: 40px;
+    background-color: var(--cor-bg-principal);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+
+}
+
+.btn-container > button{
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.message-parent{
+
+    position: relative;
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+    /* top: -60px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.erro-box{
+
+    font-size: 1rem;
+    color: #842029;
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    .message-parent{
+        width: 90%;
+
+        top: 60px;
+    }
+}
+
+.img-parent{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img{
+
+    position: relative;
+}
+
+.container-img > input{
+
+    position: absolute;
+    left: 0px;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+
+}
+
+.container-img > label{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+    background-color: transparent;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(75, 75, 75);
+}
+
+
+
+.container-img > img{
+
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}

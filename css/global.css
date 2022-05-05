@@ -1,0 +1,14 @@
+*{
+    font-family: 'Abel', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+
+    --cor-bg-principal: #008148;
+    --cor-bg-principal-escura: #13472a;
+    --cor-bg-secundaria: #eee;
+    --cor-bg-fundo: #fff;
+    --cor-box-shadow: rgba(0, 0, 0, 0.3);
+    --cor-text-form: rgb(104, 104, 104);
+}

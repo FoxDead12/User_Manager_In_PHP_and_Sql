@@ -1,0 +1,256 @@
+@import "global.css";
+
+
+.atletas-parent-container{
+
+    position: relative;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.atletas-table{
+
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.atletas-table thead tr{
+
+    background-color: var(--cor-bg-principal);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.atletas-table td,
+.atletas-table th{
+
+    padding: 12px 15px;
+    
+}
+
+
+.atletas-table td{
+
+    color: rgb(75, 75, 75);
+}
+
+
+.atletas-table tbody tr{
+
+    border-bottom: 1px solid #dddd;
+}
+
+.atletas-table tbody tr:nth-of-type(even){
+
+    background-color: #f3f3f3;
+}
+
+.atletas-table tbody tr:last-of-type{
+
+    border-bottom: 2px solid var(--cor-bg-principal);
+}
+
+.atletas-table tbody tr.active-row{
+
+    font-weight: bold;
+    color: var(--cor-bg-principal);
+
+}
+
+.atletas-table td > a {
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.atletas-table td > a > svg{
+
+    color: var( --cor-bg-principal-escura);
+}
+
+
+
+@media only screen and (max-width: 800px){
+
+    .atletas-table thead{
+
+        display: none;
+    }
+
+    .atletas-table{
+
+
+        position: relative;
+        min-width: 100%;
+        
+    }
+
+    .atletas-table, .atletas-table tbody, .atletas-table tbody tr, .atletas-table tbody td{
+
+        display: block;
+
+        /* padding: 12px 0px; */
+        font-size: 1rem;
+    }
+
+    .atletas-table tbody tr{
+
+        margin-bottom: 15px;
+        padding: 12px 0px;
+
+    }
+
+    .atletas-table td{
+
+        text-align: right;
+        position: relative;
+        font-size: 1rem;
+        
+    }
+
+    .atletas-table td::before{
+
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+}
+
+
+/* FORM SEARCH*/
+
+.seacth-container{
+
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    width: 300px;
+    border-bottom: 2px solid var(--cor-bg-principal);
+}
+
+.seacth-container > svg{
+
+    position: absolute;
+    color: var(--cor-bg-principal);
+    top: 20%;
+    right: -5px;
+    
+}
+
+.seacth-container > input{
+
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-right: 2.5rem;
+    color:rgb(75, 75, 75);
+}
+
+
+
+
+/* FORM MUDAR PAGINA */
+
+
+#form-atleta-table-buttons{
+
+
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;    
+}
+
+
+.buttons-group{
+
+    display: flex;
+    background-color: transparent;
+    width: 90px;
+    justify-content: space-between;
+}
+
+.button-container > button{
+
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    background-color: var(--cor-bg-principal);
+    border-radius: 5px;
+    
+}
+
+.button-container > button > svg{
+
+    background-color: transparent;
+    width: 100%;
+}
+
+.collum-inscicao{
+
+    display: flex;
+}
+
+.comp-inscicao{
+
+    padding: 0.6rem;
+    border-radius: 5px;
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.comp-inscicao.no{
+
+    color: #842029;
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+    
+}
+
+.comp-inscicao.yes{
+
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border: 1px solid #badbcc;
+}
+
+
+@media only screen and (max-width: 800px){
+
+
+
+    .atletas-table td > a{
+
+        justify-content: flex-end;
+    }
+
+
+}

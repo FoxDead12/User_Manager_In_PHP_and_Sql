@@ -1,0 +1,233 @@
+@import "global.css";
+
+
+.page{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.form-parent{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    
+}
+
+#altela-visualizar{
+
+    position: relative;
+    padding: 1rem;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 1rem;
+    
+}
+
+#altela-visualizar > h1{
+
+    color: var(--cor-bg-principal);
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+#altela-visualizar > h5{
+
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dddddd;
+    color: #dddddddd;
+    margin: 25px 0px;
+}   
+
+.tipo-dados{
+
+    display: flex;
+    padding: 1rem;
+}
+
+.input-container{
+
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    /* margin: 1rem; */
+    position: relative;
+    padding-left: 7%;
+    margin: 0px 5px;
+    border-bottom: 2px solid var(--cor-bg-principal);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.input-container > div{
+
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+.input-container > div > svg{
+
+    color: var(--cor-bg-principal);
+    
+}
+
+.input-container > input{
+
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(75, 75, 75);
+
+    
+}
+
+
+.input-container > input::-webkit-outer-spin-button,
+.input-container > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-container > input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 800px){
+
+
+    #altela-visualizar{
+
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .tipo-dados{
+
+        flex-direction: column;
+    }
+
+    .input-container{
+
+        position: relative;
+        margin: 15px 0px;
+        width: auto;
+    }
+
+    .input-container{
+
+        padding-left: 10%;
+
+    
+    }
+}
+
+
+.dia{
+
+    display: flex;
+
+}
+
+.dia-container{
+
+    padding: 1rem;
+}
+
+.dia-container > h5{
+
+    font-size: 1rem;
+    color: var(--cor-bg-principal);
+}
+
+.dia-row{
+
+    display: flex;
+}
+
+@media only screen and (max-width: 800px){
+
+    .dia-row{
+
+        flex-direction: column;
+    }
+}
+
+
+.btn-parent{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-container{
+
+    position: relative;
+    height: 40px;
+    background-color: var(--cor-bg-principal);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+    margin: 0px 10px;
+
+}
+
+.btn-container.btn-apagar{
+
+    background-color: #842029;
+}
+
+.btn-container > button{
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-container > button:disabled {
+
+    background-color: #ddd;
+}
+
+.user-image{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+
+}
+
+.user-image > img{
+
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: top;
+}

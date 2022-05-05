@@ -1,0 +1,50 @@
+.form-parent{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container{
+
+    position: relative;
+}
+
+.input-container > a{
+    
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+}
+
+.input-container > select{
+
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(75, 75, 75);
+    
+    
+}
+
+.jogadores-selecionados{
+
+    /* background-color: rgb(209, 209, 209); */
+}
+
+.show-equipas{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.show-equipas > .input-container{
+
+    margin: 16px 0px;
+    width: auto;
+}

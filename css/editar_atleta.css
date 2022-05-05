@@ -1,0 +1,57 @@
+@import "global.css";
+
+.apagar{
+
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container-delete{
+
+    position: absolute;
+    background-color: rgba(75, 75, 75, .7);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-delete > form{
+
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .3);
+    border-radius: 5px;
+}
+
+
+.container-delete > form > h1{
+
+    color: var(--cor-bg-principal);
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.container-delete > form > h5{
+
+    
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: rgba(75, 75, 75, 1);
+    margin: 25px 0px;
+    text-align: center;
+}
+
+.btns-group{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
